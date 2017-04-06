@@ -1,16 +1,12 @@
-<?php header("Content-Type: application/xml; charset=UTF-8");
-?>
-<?php
+<?php header("Content-Type: application/xml; charset=UTF-8"); ?>
+<?php 
 $tmp = exec("python rss.py 31", $output, $ret_code);
 $results =  json_decode($output[0],true);
-
 $link = "http://www.gouget.com.br/tertulias/rss.php";
 $now = date("D, d M Y H:i:s T");
+?>
+<?php krsort($results); ?>
 
-?>
-<?php                                                                                                                                                                                                       
-   krsort($results);  // ORDENA NA ORDEM REVERSA          
-?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Tertúlia On-Line - Conscienciologia</title>
