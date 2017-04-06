@@ -2,12 +2,7 @@
 ?>
 <?php
 $tmp = exec("python rss.py 31", $output, $ret_code);
-//echo '<br>';
 $results =  json_decode($output[0],true);
-//echo '<br>';
-//echo '<br>';
-//echo $output[0];
-//var_dump(json_decode($results,true));
 
 $link = "http://www.gouget.com.br/tertulias/rss.php";
 $now = date("D, d M Y H:i:s T");
@@ -15,7 +10,6 @@ $now = date("D, d M Y H:i:s T");
 ?>
 <?php                                                                                                                                                                                                       
    krsort($results);  // ORDENA NA ORDEM REVERSA          
-   //$results = str_replace("/file/d/","/uc?export=download&id=",$results);                                                                                                                                                                                            
 ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
