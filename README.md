@@ -1,4 +1,4 @@
-# tertulia
+# Tertúlia Online
 Crawler do site das Tertúlias Online
 
 # Diretório WEB
