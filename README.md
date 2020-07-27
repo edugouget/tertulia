@@ -8,6 +8,7 @@ Python 2.7
 
 # Diretório LOCAL
 
+<i>Não é mais usado:</i>
 Scripts rodados na pasta do Google Drive<br />
 Python 3.6<br />
 Javascript (windows)
